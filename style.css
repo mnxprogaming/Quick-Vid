@@ -1,0 +1,424 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    color: #333;
+    padding-bottom: 80px; /* Taki bottom banner content ko na chupaye */
+}
+
+/* Top Navbar */
+.navbar {
+    background-color: #1a1b26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo { font-size: 20px; font-weight: bold; }
+.logo span { color: #ffeb3b; }
+
+.nav-actions select {
+    background: #2d3342;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+/* Hero Section Size Adjustments */
+.hero {
+    /* Upar aur niche ka space (padding) kam kiya hai */
+    padding: 40px 20px; 
+    text-align: center;
+    color: white;
+    /* Aapka purana blue gradient background waisa hi rahega */
+    background: linear-gradient(135deg, #00b4db, #0083b0); 
+}
+
+.hero h1 {
+    font-size: 28px; /* Text chota kiya */
+    font-weight: bold;
+    color: #ffeb3b; 
+    margin-bottom: 5px; /* Line ke beech ka gap kam kiya */
+}
+
+.hero h2 {
+    font-size: 18px; /* Text chota kiya */
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero p {
+    font-size: 13px; /* Text chota kiya */
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Search Box / Input Field */
+.search-container {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    align-items: stretch; 
+/* Dono (input aur button) ki height same rakhne ke liye */
+}
+
+.search-container i {
+    color: #999;
+    padding: 15px 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    flex: 1; /* Bachi hui saari jagah le lega */
+    min-width: 0; /* MOBILE FIX: Input ko choti screen par shrink hone dega */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.search-container button {
+    background-color: #00c853; 
+    color: white;
+    border: none;
+    padding: 0 15px; /* Mobile par thoda gap adjust kiya */
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap; /* BUTTON FIX: Text ko niche wali line mein tootne nahi dega */
+}
+
+.search-container {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.search-container input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-container button {
+    background-color: #00c853; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+/* Content Section (Chota Size) */
+.content {
+    padding: 25px 15px; /* Gap kam kiya */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h2 { 
+    font-size: 20px; /* Heading choti ki */
+    color: #3b283d; 
+    margin-bottom: 10px; 
+}
+.content p { 
+    color: #666; 
+    line-height: 1.5; 
+    font-size: 13px; /* Text chota kiya */
+    margin-bottom: 20px; 
+}
+
+/* Feature Cards (Chota Size) */
+.card {
+    background: white;
+    padding: 15px; /* Box ke andar ka gap kam kiya */
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card-icon {
+    width: 40px; 
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /* Niche ka code icons ko wapas color dega aur center karega */
+    background: #e6f7ef;
+    color: #10b981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Niche ka code icons ko wapas color dega aur center karega */
+    background: #e6f7ef;
+    color: #10b981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Baaki colors pehle jaise rahenge */
+}
+
+.card h3 { 
+    font-size: 16px; /* Card heading choti ki */
+    margin-bottom: 6px; 
+    color: #333; 
+}
+.card p { 
+    font-size: 12px; /* Card text chota kiya */
+    color: #777; 
+}
+
+
+/* Bottom Sticky Banner */
+
+@media (min-width: 768px) {
+    .features-grid { grid-template-columns: 1fr 1fr; }
+}
+/* Exact Floating Buttons Design */
+.floating-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+/* Exact Floating Buttons Design (No Tap Effect) */
+.floating-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.float-btn {
+    background-color: white;
+    color: #00c853; 
+    border: none;
+    width: 55px; 
+    height: 55px;
+    border-radius: 12px; 
+    font-size: 22px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    /* Square shape with rounded corners */
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    margin-bottom: 15px;
+}
+/* Custom Dropdown Animation & Design */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.lang-btn {
+    background: #2d3342;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lang-menu {
+    position: absolute;
+    top: 150%; 
+    right: 0;
+    background: white;
+    color: #333;
+    list-style: none;
+    width: 140px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px); /* Upar ki taraf shift */
+    transition: all 0.3s ease; /* Smooth Animation */
+    z-index: 1000;
+}
+
+/* Click karne par box niche aayega aur dikhega */
+.lang-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-menu li {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.lang-menu li:hover {
+    background: #f4f5f7;
+}
+
+/* Selected language (Green) */
+.lang-menu li.active {
+    color: #00c853; 
+    background: #f9f9f9;
+}
+.card {
+    margin-bottom: 15px;
+}
+/* Clear (Cross) Button */
+#clearBtn {
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 15px;
+    display: none; /* Shuru mein hide rahega */
+}
+
+#clearBtn:hover {
+    color: #333;
+}
+/* Mobile Full-Screen Menu */
+.mobile-menu {
+    position: fixed;
+    top: 60px; /* Navbar ke theek niche se shuru */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #1a1e29;
+    z-index: 998;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: translateX(100%); /* Shuru mein chhupa rahega */
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+.mobile-menu.active {
+    transform: translateX(0); /* Click karne par slide hoke aayega */
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #1a1e29;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border: 1px solid #00c853; /* Green border */
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+.menu-item .arr {
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+}
+/* Supported Platforms Section */
+.platforms-section {
+    background: linear-gradient(to bottom, #e0f7fa, #cceeff); /* Light blue/cyan gradient */
+    padding: 30px 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.platforms-section h2 {
+    color: #004d40; /* Dark green/blue text */
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items ek line mein */
+    gap: 25px 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.platform-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.platform-item i {
+    font-size: 35px; /* Icon ka size */
+}
+
+.platform-item span {
+    font-size: 11px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+
+
