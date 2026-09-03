@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Aapki CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navbar -->
+        <nav class="navbar">
+        <div class="logo"><span>Vids</span>Save.com</div>
+        <div class="nav-actions">
+            <div class="custom-dropdown">
+                <button id="langBtn" class="lang-btn">English <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i></button>
+                <ul id="langMenu" class="lang-menu">
+                    <li class="active">English</li>
+                    <li>हिंदी</li>
+                    <li>Español</li>
+                    <li>العربية</li>
+                    <li>Português</li>
+                    <li>Indonesia</li>
+                    <li>Français</li>
+                    <li>日本語</li>
+                    <li>Русский</li>
+                    <li>Deutsch</li>
+                    <li>한국어</li>
+                </ul>
+            </div>
+            
+            <i class="fa-solid fa-bars" id="menuToggle" style="font-size: 20px; cursor: pointer;"></i>
+            
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="menu-item"><i class="fa-solid fa-house" style="color: #00c853;"></i> Home</a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube <i class="fa-solid fa-caret-down arr"></i></a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i> Instagram <i class="fa-solid fa-caret-down arr"></i></a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-facebook" style="color: #1877f2;"></i> Facebook</a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-tiktok"></i> TikTok <i class="fa-solid fa-caret-down arr"></i></a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-pinterest" style="color: #e60023;"></i> Pinterest <i class="fa-solid fa-caret-down arr"></i></a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-reddit" style="color: #ff4500;"></i> Reddit</a>
+        <a href="#" class="menu-item"><i class="fa-brands fa-threads"></i> Threads</a>
+        <a href="#" class="menu-item"><i class="fa-solid fa-play"></i> Dailymotion</a>
+    </div>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><span>Vids</span>Save.com</h1>
+        <h3>Free All Video Downloader</h3>
+        <p>Support the Most Popular Platforms</p>
+        
+        <!-- Search and Download Input -->
+        <div class="search-container">
+            <input type="text" id="videoUrl" placeholder="Enter URL or Search">
+            <i class="fa-solid fa-xmark" id="clearBtn"></i>
+            <button id="downloadBtn">Download</button>
+        </div>
+    </section>
+
+    <!-- Main Content & Features -->
+    <section class="content">
+        <h2>Why Millions Choose VidsSave for Video Downloads</h2>
+        <p>VidsSave helps you download videos, audio, reels, shorts, and photos in a few clicks. This all-in-one downloader is built for speed, privacy, and smooth use across mobile and desktop browsers.</p>
+        
+        <div class="features-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h3>Instant Link Analysis</h3>
+                <p>Paste a link and get results in seconds—often faster than other downloaders.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <h3>Works on Any Device</h3>
+                <p>Download seamlessly on mobile, tablet, or desktop—no extra apps needed.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3>Wide Platform Support</h3>
+                <p>Supports YouTube, TikTok, Instagram, Facebook, and more.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-arrow-down-short-wide"></i>
+                </div>
+                <h3>Flexible Quality Choices</h3>
+                <p>Pick the quality you want—from 144p up to 1080p+ (4K) when available.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3>Multilingual Experience</h3>
+                <p>Use VidsSave in multiple languages, including English, Spanish, Hindi, and more.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Privacy-First by Design</h3>
+                <p>Your privacy matters. Processing happens locally, with no data storage and reduced security risk.</p>
+            </div>
+        </div>
+    </section>
+        <!-- Supported Platforms Section -->
+    <section class="platforms-section">
+        <h2><u>Support the Most Popular Platforms</u></h2>
+        <div class="platforms-grid">
+            <div class="platform-item">
+                <i class="fa-brands fa-facebook" style="color: #1877f2;"></i>
+                <span>Facebook</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-brands fa-instagram" style="color: #e1306c;"></i>
+                <span>Instagram</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                <span>YouTube</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+                <span>TikTok</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-brands fa-pinterest" style="color: #e60023;"></i>
+                <span>Pinterest</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-brands fa-reddit" style="color: #ff4500;"></i>
+                <span>Reddit</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-brands fa-threads" style="color: #000000;"></i>
+                <span>Threads</span>
+            </div>
+            <div class="platform-item">
+                <i class="fa-solid fa-play" style="color: #000000;"></i>
+                <span>Dailymotion</span>
+            </div>
+        </div>
+    </section>
+    
+
+        <!-- Floating Feedback & Share Buttons -->
+    <div class="floating-buttons">
+        <button class="float-btn" id="feedbackBtn">
+            <i class="fa-solid fa-message"></i>
+        </button>
+        <button class="float-btn" id="shareBtn">
+            <i class="fa-solid fa-share"></i>
+        </button>
+    </div>
+    
+    <!-- Aapki JS file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
